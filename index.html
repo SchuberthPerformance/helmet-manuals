@@ -1,27 +1,32 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Available Manuals</title>
+  <title>Helmet Manuals</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
     body { font-family: sans-serif; padding: 20px; background: #f9f9f9; }
-    h1 { color: #333; margin-bottom: 10px; }
-    p { margin: 6px 0 18px; color: #444; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 12px 0; }
-    a { text-decoration: none; color: #0066cc; font-weight: bold; }
-    a:hover { text-decoration: underline; }
+    h1 { color: #333; margin-bottom: 10px; text-align: center; }
+    p { text-align: center; margin-bottom: 30px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card { background: white; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); text-align: center; padding: 15px; transition: transform 0.2s; }
+    .card:hover { transform: scale(1.03); }
+    .card img { max-width: 100%; border-radius: 8px; margin-bottom: 10px; }
+    .card a { text-decoration: none; font-weight: bold; color: #0066cc; font-size: 16px; }
   </style>
 </head>
 <body>
-  <h1>Available Manuals</h1>
-  <p>Select the manual you are interested in to open and download it.</p>
-  <p><em>Wählen Sie das Handbuch aus, das Sie interessiert, um es zu öffnen und herunterzuladen.</em></p>
+  <h1>Helmet Manuals</h1>
+  <p>Select the helmet you are interested in to view and download manuals.<br>
+  <em>Wählen Sie den Helm aus, der Sie interessiert, um Handbücher anzuzeigen und herunterzuladen.</em></p>
 
-  <ul>
-    <li><a href="SP1%20Carbon%20Evo%20Manual.pdf" target="_blank">📄 SP1 Carbon Evo Manual</a></li>
-    <li><a href="8860-2018_advanced_helmet.pdf" target="_blank">📄 8860-2018 Advanced Helmet</a></li>
-    <li><a href="8878-2024_karting_helmet.pdf" target="_blank">📄 8878-2024 Karting Helmet</a></li>
-  </ul>
+  <div class="grid">
+    <div class="card"><a href="SF4/SF4-ABP"><img src="img/SF4.jpg" alt="SF4 Helmet"><br>SF4</a></div>
+
+    <div class="card"><a href="SP1_Carbon_Evo/"><img src="img/SP1_Carbon_Evo.jpg" alt="SP1 Carbon Evo Helmet"><br>SP1 Carbon Evo</a></div>
+    <div class="card"><a href="SK1_Carbon/"><img src="img/SK1_Carbon.jpg" alt="SK1 Carbon Helmet"><br>SK1 Carbon</a></div>
+    <div class="card"><a href="SP1_Hybrid/"><img src="img/SP1_Hybrid.jpg" alt="SP1 Hybrid Helmet"><br>SP1 Hybrid</a></div>
+    <div class="card"><a href="SK1_Hybrid_CMR/"><img src="img/SK1_Hybrid_CMR.jpg" alt="SK1 Hybrid CMR Helmet"><br>SK1 Hybrid CMR</a></div>
+  </div>
 </body>
 </html>
